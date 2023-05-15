@@ -27,21 +27,15 @@ public class DepartmentFormController implements Initializable{
 	
 	private DepartmentService service;
 	private Department entity;
-	
 	private List<DataChangeListener> dataChangeListeners = new ArrayList<>();
-	
 	@FXML
 	private TextField txtId;
-	
 	@FXML
 	private TextField txtName;
-	
 	@FXML
 	private Label labelErrorName;
-	
 	@FXML
 	private Button btSave;
-	
 	@FXML
 	private Button btCancel;
 	
