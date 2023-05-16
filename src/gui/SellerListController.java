@@ -128,9 +128,10 @@ public class SellerListController implements Initializable, DataChangeListener {
 		dialogStage.initOwner(parentStage);
 		dialogStage.initModality(Modality.WINDOW_MODAL); dialogStage.showAndWait();
 		
-		} catch (IOException e) { Alerts.showAlert("IoException",
-		"Error loading view", e.getMessage(), Alert.AlertType.ERROR); }
-		
+		} catch (IOException e) { 
+			e.printStackTrace();
+			Alerts.showAlert("IoException","Error loading view", e.getMessage(), Alert.AlertType.ERROR); }
+			
 	}
 
 	@Override
